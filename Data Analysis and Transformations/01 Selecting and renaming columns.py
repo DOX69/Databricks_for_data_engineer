@@ -96,6 +96,18 @@ countries.withColumnRenamed("name","countries_name").limit(10).display()
 
 region_path = '/FileStore/tables/country_regions.csv'
 
+region_schema = StructType(
+    [StructField("ID",IntegerType(),False),
+     StructField("NAME",StringType(),False)
+     ]
+)
+
+region = spark.read.csv(path=region_path,header=True,schema=region_schema).withColumnRenamed("NAME","Continent")
+
+# COMMAND ----------
+
+region.limit(10).display()
+
 # COMMAND ----------
 
 
