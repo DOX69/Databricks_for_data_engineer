@@ -20,3 +20,32 @@ countries_schema = StructType([
                     )
 
 countries = spark.read.csv(path=countries_path, header = True, schema=countries_schema)
+
+# COMMAND ----------
+
+from pyspark.sql.functions import *
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Locate the position of a substring
+
+# COMMAND ----------
+
+countries.filter((locate('B',upper(countries['Capital']))==1)
+                 |(col('Population')>10**9))\
+.display()
+
+# COMMAND ----------
+
+countries.filter(~(countries['Region_id']==10))\
+.display()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Filter the countries DataFrame where : countries name greter than 15 characters and region_id is NOT 10
+
+# COMMAND ----------
+
+countries.filter((length(col('Name'))>15)&(col('region_id')!=10)).display()
