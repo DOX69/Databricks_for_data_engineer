@@ -24,6 +24,11 @@ countries = spark.read.csv(path=countries_path, header = True, schema=countries_
 # COMMAND ----------
 
 # MAGIC %md
+# MAGIC # Group by
+
+# COMMAND ----------
+
+# MAGIC %md
 # MAGIC Agg function with sum() and countDistinct()
 # MAGIC
 # MAGIC we can alias them after operations in a agg()
@@ -66,3 +71,14 @@ countries.groupBy("REGION_ID","SUB_REGION_ID")\
     .agg(max("POPULATION").alias("max_pop"),
          min("POPULATION").alias("min_pop"))\
     .orderBy(col("REGION_ID").asc()).display()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # Pivotting
+
+# COMMAND ----------
+
+countries.groupBy("SUB_REGION_ID")\
+    .pivot("REGION_ID")\
+    .agg(sum("POPULATION")).display()
