@@ -23,36 +23,46 @@ countries = spark.read.csv(path=countries_path, header = True, schema=countries_
 
 # COMMAND ----------
 
-from pyspark.sql.functions import expr
+# MAGIC %md
+# MAGIC Agg function with sum() and countDistinct()
+# MAGIC
+# MAGIC we can alias them after operations in a agg()
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC expr() can operate sql function like left, case when, etc
+# MAGIC an aggregation on a single column 'REGION_ID' with multiple aggregation
 
 # COMMAND ----------
 
-countries.select(expr('left(NAME,2) as 2_country')).distinct().limit(10).display()
+from pyspark.sql.functions import *
+
+countries.groupBy('REGION_ID')\
+  .agg(sum(col('POPULATION')).alias('Sum_population'),
+        countDistinct("NAME").alias("distinct_name"))\
+          .display()
+
+# COMMAND ----------
+
+countries.groupBy('REGION_ID','SUB_REGION_ID')\
+  .agg(sum(col('POPULATION')).alias('Sum_population'),
+        countDistinct("NAME").alias("distinct_name"))\
+          .display()
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC if the population is greatr than 100million return large, medium for 50 million above and small otherwise
+# MAGIC ### Assignment
+# MAGIC
+# MAGIC Aggregate the DF by region_id and sub_region_id
+# MAGIC
+# MAGIC Display the min and max population
+# MAGIC
+# MAGIC sort by region_id in asc
 
 # COMMAND ----------
 
-countries.select("name",
-                 "POPULATION",
-                 expr("case when POPULATION>100000000 then 'Large' when POPULATION between 50000000 and 100000000 then 'Medium' else 'Small' end as class_population "))\
-                .limit(10000)\
-                .display()
-
-# COMMAND ----------
-
-countries.withColumn("area_class",
-                 expr("case when AREA_KM2>1000000 then 'Large' when AREA_KM2 between 300000 and 1000000 then 'Medium' else 'Small' end"))\
-                .display()
-
-# COMMAND ----------
-
-
+countries.groupBy("REGION_ID","SUB_REGION_ID")\
+    .agg(max("POPULATION").alias("max_pop"),
+         min("POPULATION").alias("min_pop"))\
+    .orderBy(col("REGION_ID").asc()).display()
