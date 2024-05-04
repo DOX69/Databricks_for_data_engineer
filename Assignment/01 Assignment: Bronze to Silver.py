@@ -170,7 +170,7 @@ silver_orders_items = orders_items.drop("LINE_ITEM_ID")
 
 # COMMAND ----------
 
-silver_orders_items = silver_orders.na.drop()
+silver_orders_items = silver_orders_items.na.drop()
 
 # COMMAND ----------
 
