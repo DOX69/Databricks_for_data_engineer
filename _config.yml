@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: Mickaël's homepage
 logo : images/PDP.jpg
-description: Bookmark this to keep an eye on my project data engineer updates!
+description: Keep an eye on my data engineer projects!
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme 
