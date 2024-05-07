@@ -1,10 +1,5 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC
-
-# COMMAND ----------
-
-# MAGIC %md
 # MAGIC # Use data catalog UI to import an create a managed table 
 
 # COMMAND ----------
@@ -67,7 +62,11 @@ countries_schema = StructType([
 
 # COMMAND ----------
 
-countries = spark.read.csv("/FileStore/tables/countries.csv",header=True,schema=countries_schema)
+countries = spark.read.csv("dbfs:/FileStore/bronze/customers.csv",header=True,schema=countries_schema)
+
+# COMMAND ----------
+
+# display(dbutils.fs.ls('dbfs:/FileStore/bronze/'))
 
 # COMMAND ----------
 
@@ -81,7 +80,7 @@ countries = spark.read.csv("/FileStore/tables/countries.csv",header=True,schema=
 
 # COMMAND ----------
 
-countries.write.saveAsTable('countries.countries_mt')
+countries.write.saveAsTable('countries.countries_default_loc')
 
 # COMMAND ----------
 
@@ -130,3 +129,14 @@ countries.write.saveAsTable('countries.countries_mt')
 
 # MAGIC %sql 
 # MAGIC -- DROP TABLE countries.countries_copy
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # You can specify location using LOCATION command 
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC create database <Datbase name>
+# MAGIC LOCATION 'location/file'
