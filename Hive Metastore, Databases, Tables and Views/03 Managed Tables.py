@@ -60,6 +60,7 @@ countries_schema = StructType([
                     ]
                     )
 
+
 # COMMAND ----------
 
 countries = spark.read.csv("dbfs:/FileStore/bronze/customers.csv",header=True,schema=countries_schema)
