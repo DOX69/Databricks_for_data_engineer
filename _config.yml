@@ -1,7 +1,0 @@
-theme: jekyll-theme-minimal
-title: Data engineering in Databricks spark 🌨️
-logo: /images/PDP.png
-description: Keep an eye on my data engineer formations!
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme 
