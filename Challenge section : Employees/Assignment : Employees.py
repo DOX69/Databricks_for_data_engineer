@@ -176,7 +176,7 @@ gold_employees = employees.join(departments,
 
 # COMMAND ----------
 
-gold_employees.drop("MANAGER_ID").write.parquet("/mnt/employees/gold/employees")
+gold_employees.drop("MANAGER_ID").write.format("delta").parquet("/mnt/employees/gold/employees",mode='overwrite')
 
 # COMMAND ----------
 
@@ -216,7 +216,7 @@ group by all
 
 # COMMAND ----------
 
-gold_manager.write.parquet("/mnt/employees/gold/manager",mode = "overwirte")
+gold_manager.write.format("delta").parquet("/mnt/employees/gold/manager",mode = "overwrite")
 
 # COMMAND ----------
 
@@ -230,4 +230,38 @@ gold_manager.explain()
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC select current_database()
 
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC CREATE DATABASE EMPLOYEES
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC USE DATABASE EMPLOYEES
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC I can specify directly gold/employees because its a ***delta parquet***
+
+# COMMAND ----------
+
+gold_employees.drop("MANAGER_ID").write.options(path='/mnt/employees/gold/employees',mode='overwrite').saveAsTable('employees_ext',mode='overwrite')
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC same for manager because gold/manager is a ***delta parquet***
+
+# COMMAND ----------
+
+gold_manager.write.options(path='/mnt/employees/gold/manager',mode='overwrite').saveAsTable('manager_ext',mode='overwrite')
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC -- drop table employees_ext
