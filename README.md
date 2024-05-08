@@ -1,4 +1,5 @@
 <html lang="en">
+    <img src="/images/test.png" alt="image" width="200">
 <body>
     <img src="/images/PDP.png" alt="image" width="200">
     <div>
