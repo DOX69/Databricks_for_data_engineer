@@ -1,4 +1,12 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC # Mounting ADLS to DBFS
+# MAGIC
+# MAGIC #### Resources:
+# MAGIC * https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts
+
+# COMMAND ----------
+
 configs = {"fs.azure.account.auth.type": "OAuth",
           "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
           "fs.azure.account.oauth2.client.id": "<application-id>",
