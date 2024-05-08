@@ -17,10 +17,12 @@
         <h2>Projects</h2>
         <p>ETL Pipeline for Customer Data</p>
     </div>
+</body>
+<marge>
     <div style="position: absolute; bottom: 10px; right: 10px;">
         <h2>Contact</h2>
         <p>Email: mickael.rakotoa@gmail.com</p>
         <p>Phone: +33 6 41 05 12 65</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mickael-rakotoarinivo">linkedin.com/in/mickael-rakotoarinivo</a></p>
     </div>
-</body>
+</marge>
