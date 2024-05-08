@@ -1,11 +1,11 @@
-<div style="display: flex; align-items: right;">
-    <img src="/images/PDP.png" alt="My Logo" width="200" style="margin-right: 20px;">  
-  <p><h1>Mickaël RAKOTOARINIVO</h1>
-    I'm a data developer specializing in cloud solutions. With a master's degree in data science, I have solid experience in big data and data analysis. I trained on Databricks for data engineer and here's what I learned.</p>
+<div style="display: flex;">
+    <img src="/images/PDP.png" alt="My Logo" width="200" style="margin-right: 20px;"> 
+    <h1>Mickaël RAKOTOARINIVO</h1>
+  <p>I'm a data developer specializing in cloud solutions. With a master's degree in data science, I have solid experience in big data and data analysis. I trained on Databricks for data engineer and here's what I learned.</p>
 </div>
 <body>
     <div class="container">
-        <h2>Data Engineer</h2>
+        <h2>Contact</h2>
         <p>Email: mickael.rakotoa@gmail.com</p>
         <p>LinkedIn: <a href="www.linkedin.com/in/mickael-rakotoarinivo">linkedin.com/in/mickael-rakotoarinivo</a></p>
         <h2>Skills</h2>
