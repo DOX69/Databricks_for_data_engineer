@@ -1,4 +1,12 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC # Mounting ADLS to DBFS
+# MAGIC
+# MAGIC #### Resources:
+# MAGIC * https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts
+
+# COMMAND ----------
+
 application_id = "a54c2834-3bff-4943-8cfd-bbebaee25310"
 tenant_id = "ef45c45c-4142-434c-b13e-f7ac7c104097"
 secret= "2sj8Q~ADMvVBXNh9cns24qVy7XOFqZikRS~PocCX"
