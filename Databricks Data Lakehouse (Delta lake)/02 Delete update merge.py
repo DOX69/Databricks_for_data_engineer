@@ -117,6 +117,11 @@ deltaTable.update("region_id ==10", { "COUNTRY_CODE": "'ZZZ'" } )   # predicate 
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC *deltaTable* : this is a delta table object (not a DF)
+
+# COMMAND ----------
+
 # MAGIC %sql
 # MAGIC select *
 # MAGIC from countries_managed_delta
