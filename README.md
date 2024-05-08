@@ -1,5 +1,5 @@
+<img src="/images/PDP.png" alt="My Logo" width="200"> 
 <div>
-    <img src="/images/PDP.png" alt="My Logo" width="200"> 
     <h1>Mickaël RAKOTOARINIVO</h1>
   <p>I'm a data developer specializing in cloud solutions. With a master's degree in data science, I have solid experience in big data and data analysis. I trained on Databricks for data engineer and here's what I learned.</p>
 </div>
@@ -19,4 +19,3 @@
         <p>ETL Pipeline for Customer Data</p>
     </div>
 </body>
-</html>
