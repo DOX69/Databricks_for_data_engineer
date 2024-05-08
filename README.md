@@ -1,6 +1,6 @@
 <html lang="en">
 <body>
-    <img src="/images/PDP.png" alt="image" width="200">
+    <img src="images/PDP.png" alt="image" width="200">
     <div>
         <h1>Mickaël RAKOTOARINIVO</h1>
         <p>I'm a data developer specializing in cloud solutions. With a master's degree in data science, I have solid experience in big data and data analysis. I trained on Databricks for data engineering, and here's what I learned.</p>
