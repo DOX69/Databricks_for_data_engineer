@@ -177,6 +177,7 @@ gold_employees = employees.join(departments,
 # COMMAND ----------
 
 gold_employees.drop("MANAGER_ID").write.format("delta").parquet("/mnt/employees/gold/employees",mode='overwrite')
+# gold_employees.drop("MANAGER_ID").write.parquet("/mnt/employees/gold/employees",mode='overwrite')
 
 # COMMAND ----------
 
@@ -260,6 +261,26 @@ gold_employees.drop("MANAGER_ID").write.options(path='/mnt/employees/gold/employ
 # COMMAND ----------
 
 gold_manager.write.options(path='/mnt/employees/gold/manager',mode='overwrite').saveAsTable('manager_ext',mode='overwrite')
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC if it's not a delta parquet, use ***LOCATION*** command in SQL
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC CREATE TABLE IF NOT EXISTS employees.employees_ext
+# MAGIC (
+# MAGIC   EMPLOYEE_ID int,
+# MAGIC   FULL_NAME string,
+# MAGIC   HIRE_DATE date, 
+# MAGIC   JOB_ID string,
+# MAGIC   SALARY int,
+# MAGIC   DEPARTMENT_NAME string
+# MAGIC   )
+# MAGIC USING parquet
+# MAGIC LOCATION '/mnt/employees/gold/employees'
 
 # COMMAND ----------
 
