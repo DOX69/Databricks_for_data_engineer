@@ -24,10 +24,6 @@ except:
 
 # COMMAND ----------
 
-print('next command')
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC # Text widgets
 
