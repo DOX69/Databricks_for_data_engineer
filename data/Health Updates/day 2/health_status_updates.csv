@@ -1,0 +1,40 @@
+STATUS_UPDATE_ID,PATIENT_ID,DATE_PROVIDED,FEELING_TODAY,IMPACT,INJECTION_SITE_SYMPTOMS,HIGHEST_TEMP,FEVERISH_TODAY,GENERAL_SYMPTOMS,HEALTHCARE_VISIT
+203420,1083,09/17/2022,Good,Be unable to do normal activities,Swelling,99.6,No,Headache,Outpatient visit
+202110,1198,09/16/2022,Good,Be unable to do normal activities,Redness,103.4,Yes,Headache,Telehealth / virtual health
+200060,1189,09/16/2022,Fair,Be unable to do normal activities,Swelling,101.8,Yes,Muscle or body aches,Outpatient visit
+200130,1054,09/16/2022,Fair,Be unable to do normal activities,Swelling,101.6,Yes,Nausea,Outpatient visit
+200140,1189,09/16/2022,Fair,Be unable to work,Swelling,99.6,No,Vomiting,Outpatient visit
+200200,1189,09/16/2022,Fair,Be unable to work,Swelling,104.8,Yes,Joint pains,Outpatient visit
+200240,1039,09/16/2022,Good,Be unable to do normal activities,Pain,102.6,Yes,Diarrhea,Telehealth / virtual health
+200280,1039,09/16/2022,Good,Be unable to do normal activities,Pain,104.7,Yes,Joint pains,Telehealth / virtual health
+200370,1161,09/16/2022,Good,Be unable to get care from a healthcare professional,Pain,104.5,Yes,Muscle or body aches,Telehealth / virtual health
+200490,1161,09/16/2022,Good,Be unable to do normal activities,Pain,102.4,Yes,Diarrhea,Telehealth / virtual health
+200820,1076,09/16/2022,Good,Be unable to do normal activities,Swelling,101.4,Yes,Nausea,Outpatient visit
+201130,1139,09/16/2022,Good,Be unable to work,Redness,99.9,No,Joint pains,Hospitalization
+201150,1139,09/16/2022,Good,Be unable to do normal activities,Redness,101.7,Yes,Abdominal pain,Hospitalization
+201250,1149,09/16/2022,Good,Be unable to work,Pain,102.3,Yes,Headache,Telehealth / virtual health
+201270,1149,09/16/2022,Good,Be unable to get care from a healthcare professional,Pain,99.7,No,Joint pains,Telehealth / virtual health
+201640,1059,09/16/2022,Good,Be unable to work,Redness,102.6,Yes,Rash near injection site,Emergency room visit
+201660,1059,09/16/2022,Good,Be unable to work,Redness,102.2,Yes,Fatigue or tiredness,Emergency room visit
+201790,1100,09/16/2022,Good,Be unable to do normal activities,Pain,101.8,Yes,Chills,Emergency room visit
+201890,1100,09/16/2022,Good,Be unable to work,Pain,99.5,No,Rash near injection site,Emergency room visit
+204890,1050,09/16/2022,Good,Be unable to do normal activities,Itching,101.1,Yes,Muscle or body aches,Telehealth / virtual health
+205050,1052,09/16/2022,Good,Be unable to work,Swelling,99.8,No,Fatigue or tiredness,Outpatient visit
+205280,1186,09/16/2022,Good,Be unable to work,Pain,99,No,Nausea,Telehealth / virtual health
+205290,1190,09/16/2022,Good,Be unable to do normal activities,Pain,104,Yes,Headache,Telehealth / virtual health
+205500,1004,09/16/2022,Poor,Be unable to do normal activities,Pain,100.7,Yes,Vomiting,Outpatient visit
+205780,1177,09/16/2022,Good,Be unable to do normal activities,Swelling,104.4,Yes,Diarrhea,Outpatient visit
+205800,1177,09/16/2022,Good,Be unable to work,Swelling,99.4,No,Rash near injection site,Outpatient visit
+205870,1005,09/16/2022,Good,Be unable to work,Swelling,99.6,No,Fatigue or tiredness,Outpatient visit
+206140,1003,09/16/2022,Good,Be unable to work,Redness,103.2,Yes,Joint pains,Hospitalization
+206320,1182,09/16/2022,Good,Be unable to work,Pain,100.8,Yes,Headache,Telehealth / virtual health
+202490,1136,09/16/2022,Fair,Be unable to get care from a healthcare professional,Itching,99.2,No,Headache,Telehealth / virtual health
+202620,1020,09/16/2022,Good,Be unable to get care from a healthcare professional,Swelling,103.4,Yes,Joint pains,Outpatient visit
+202630,1129,09/16/2022,Good,Be unable to work,Swelling,104.6,Yes,Rash near injection site,Outpatient visit
+202830,1082,09/16/2022,Good,Be unable to get care from a healthcare professional,Pain,104.8,Yes,Chills,Telehealth / virtual health
+203040,1160,09/16/2022,Good,Be unable to do normal activities,Pain,103.7,Yes,Nausea,Outpatient visit
+203100,1160,09/16/2022,Good,Be unable to work,Pain,102.4,Yes,Fatigue or tiredness,Outpatient visit
+203230,1103,09/16/2022,Good,Be unable to get care from a healthcare professional,Pain,99,Yes,Muscle or body aches,Outpatient visit
+203470,1024,09/16/2022,Good,Be unable to work,Swelling,103,Yes,Nausea,Outpatient visit
+202320,1147,09/15/2022,Fair,Be unable to do normal activities,Itching,100.9,Yes,Vomiting,Telehealth / virtual health
+200100,1189,09/15/2022,Fair,Be unable to work,Swelling,103.1,Yes,Fatigue or tiredness,Outpatient visit

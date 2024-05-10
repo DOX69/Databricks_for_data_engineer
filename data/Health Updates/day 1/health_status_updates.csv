@@ -1,0 +1,40 @@
+STATUS_UPDATE_ID,PATIENT_ID,DATE_PROVIDED,FEELING_TODAY,IMPACT,INJECTION_SITE_SYMPTOMS,HIGHEST_TEMP,FEVERISH_TODAY,GENERAL_SYMPTOMS,HEALTHCARE_VISIT
+203470,1024,09/16/2022,Good,Be unable to work,Swelling,103,Yes,Nausea,Outpatient visit
+202320,1147,09/15/2022,Fair,Be unable to do normal activities,Itching,100.9,Yes,Vomiting,Telehealth / virtual health
+200100,1189,09/15/2022,Fair,Be unable to work,Swelling,103.1,Yes,Fatigue or tiredness,Outpatient visit
+200110,1054,09/15/2022,Fair,Be unable to do normal activities,Swelling,103,Yes,Chills,Outpatient visit
+200270,1161,09/15/2022,Good,Be unable to get care from a healthcare professional,Pain,102.3,Yes,Vomiting,Telehealth / virtual health
+200390,1161,09/15/2022,Good,Be unable to work,Pain,99.9,Yes,Muscle or body aches,Telehealth / virtual health
+200530,1067,09/15/2022,Good,Be unable to work,Pain,103,Yes,Headache,Outpatient visit
+200540,1154,09/15/2022,Good,Be unable to work,Pain,104.5,Yes,Headache,Outpatient visit
+200620,1154,09/15/2022,Good,Be unable to work,Pain,103.2,Yes,Vomiting,Outpatient visit
+200730,1067,09/15/2022,Good,Be unable to work,Pain,101.1,Yes,Chills,Outpatient visit
+200940,1076,09/15/2022,Good,Be unable to get care from a healthcare professional,Swelling,104.8,Yes,Diarrhea,Outpatient visit
+201020,1077,09/15/2022,Good,Be unable to do normal activities,Redness,102.6,Yes,Diarrhea,Hospitalization
+201060,1077,09/15/2022,Good,Be unable to work,Redness,99.8,No,Muscle or body aches,Hospitalization
+201100,1077,09/15/2022,Good,Be unable to work,Redness,101.3,Yes,Headache,Hospitalization
+201470,1149,09/15/2022,Good,Be unable to work,Pain,102.2,Yes,Fatigue or tiredness,Telehealth / virtual health
+201600,1059,09/15/2022,Good,Be unable to work,Redness,100.6,Yes,Fatigue or tiredness,Emergency room visit
+201700,1059,09/15/2022,Good,Be unable to work,Redness,99.9,No,Headache,Emergency room visit
+201750,1100,09/15/2022,Good,Be unable to work,Pain,100.2,No,Fatigue or tiredness,Emergency room visit
+201860,1080,09/15/2022,Good,Be unable to do normal activities,Pain,102.9,Yes,Nausea,Emergency room visit
+205090,1052,09/15/2022,Good,Be unable to get care from a healthcare professional,Swelling,99.2,No,Muscle or body aches,Outpatient visit
+205360,1186,09/15/2022,Good,Be unable to work,Pain,99.3,No,Joint pains,Telehealth / virtual health
+205530,1089,09/15/2022,Poor,Be unable to work,Pain,101.3,Yes,Vomiting,Outpatient visit
+205620,1004,09/15/2022,Poor,Be unable to do normal activities,Pain,102.5,Yes,Muscle or body aches,Outpatient visit
+205660,1004,09/15/2022,Poor,Be unable to get care from a healthcare professional,Pain,104.8,Yes,Diarrhea,Outpatient visit
+205730,1089,09/15/2022,Poor,Be unable to get care from a healthcare professional,Pain,102.6,Yes,Muscle or body aches,Outpatient visit
+205810,1005,09/15/2022,Good,Be unable to get care from a healthcare professional,Swelling,103.3,Yes,Headache,Outpatient visit
+205950,1005,09/15/2022,Good,Be unable to do normal activities,Swelling,100.5,Yes,Joint pains,Outpatient visit
+205960,1177,09/15/2022,Good,Be unable to work,Swelling,99.6,No,Nausea,Outpatient visit
+206090,1151,09/15/2022,Good,Be unable to work,Redness,101.9,Yes,Chills,Hospitalization
+206190,1151,09/15/2022,Good,Be unable to get care from a healthcare professional,Redness,102.6,Yes,Chills,Hospitalization
+202610,1129,09/15/2022,Good,Be unable to work,Swelling,99.8,No,Fatigue or tiredness,Outpatient visit
+202760,1196,09/15/2022,Good,Be unable to get care from a healthcare professional,Pain,102.5,Yes,Headache,Telehealth / virtual health
+203050,1103,09/15/2022,Good,Be unable to do normal activities,Pain,104.7,Yes,Nausea,Outpatient visit
+203070,1103,09/15/2022,Good,Be unable to get care from a healthcare professional,Pain,103.9,Yes,Vomiting,Outpatient visit
+203160,1160,09/15/2022,Good,Be unable to do normal activities,Pain,101.1,Yes,Fatigue or tiredness,Outpatient visit
+203190,1103,09/15/2022,Good,Be unable to do normal activities,Pain,99.5,Yes,Rash near injection site,Outpatient visit
+203380,1083,09/15/2022,Good,Be unable to work,Swelling,100.7,Yes,Nausea,Outpatient visit
+203460,1083,09/15/2022,Good,Be unable to get care from a healthcare professional,Swelling,99,No,Chills,Outpatient visit
+201990,1100,09/14/2022,Good,Be unable to work,Pain,99.9,No,Headache,Emergency room visit
