@@ -14,8 +14,6 @@
             <li>SQL</li>
             <li>Big Data (Spark)</li>
         </ul>
-        <h2>Projects</h2>
-        <p>ETL Pipeline for Customer Data</p>
     </div>
 </body>
 <marge>
