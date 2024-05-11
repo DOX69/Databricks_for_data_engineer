@@ -6,6 +6,7 @@
 
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
+from delta.tables import *
 
 # COMMAND ----------
 
