@@ -39,8 +39,6 @@ health_schema = StructType([
     StructField("FEVERISH_TODAY",StringType(),False),
     StructField("GENERAL_SYMPTOMS",StringType(),False),
     StructField("HEALTHCARE_VISIT",StringType(),False),
-    
-
 ])
 
 # COMMAND ----------
