@@ -49,10 +49,10 @@ deltaTable_health.alias('target').merge(
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select * from health_data 
-# MAGIC except 
-# MAGIC select * from health_data_clone
+# %sql
+# select * from health_data 
+# except 
+# select * from health_data_clone
 
 # COMMAND ----------
 
@@ -61,7 +61,22 @@ deltaTable_health.alias('target').merge(
 
 # COMMAND ----------
 
-health_data = spark.read.table('health_data')
+health_data = spark.read.table('healthcare.health_data')
+# health_data_verif = spark.read.format("delta").load('/mnt/health-updates/silver/health_data')
+
+
+# COMMAND ----------
+
+# health_data_verif.createOrReplaceTempView("health_data_verif")
+# health_data.createOrReplaceTempView("health_data")
+
+
+# COMMAND ----------
+
+# %sql
+# select * from health_data_verif
+# except
+# select * from health_data
 
 # COMMAND ----------
 
