@@ -2,6 +2,8 @@
 # MAGIC %md
 # MAGIC # Customer Orders - Delta Live Tables with Expectations
 # MAGIC This Notebook demonstrates how to create a notebook for a Delta Live Table Pipeline with Expectations to manage data quality
+# MAGIC
+# MAGIC >We will use **@dlt.expect()**
 
 # COMMAND ----------
 
@@ -15,6 +17,19 @@
 # MAGIC             "driver_node_type_id": "Standard_DS3_v2"
 # MAGIC         }
 # MAGIC     ],
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Test
+
+# COMMAND ----------
+
+spark.read.format("delta").load("/mnt/streaming-demo/delta_db/system/events").display()
+
+# COMMAND ----------
+
+spark.read.format("delta").load("/mnt/streaming-demo/delta_db/tables/order_items_bronze").display()
 
 # COMMAND ----------
 
