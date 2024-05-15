@@ -25,11 +25,11 @@
 
 # COMMAND ----------
 
-spark.read.format("delta").load("/mnt/streaming-demo/delta_db/system/events").display()
+# spark.read.format("delta").load("/mnt/streaming-demo/delta_db/system/events").display()
 
 # COMMAND ----------
 
-spark.read.format("delta").load("/mnt/streaming-demo/delta_db/tables/order_items_bronze").display()
+# spark.read.format("delta").load("/mnt/streaming-demo/delta_db/tables/order_items_bronze").display()
 
 # COMMAND ----------
 
@@ -71,7 +71,7 @@ orders_schema = StructType([
 
 # MAGIC %md
 # MAGIC
-# MAGIC Here I have two expectaions, the first one is called order_status_complete
+# MAGIC Here I have two expectations, the first one is called order_status_complete
 
 # COMMAND ----------
 
