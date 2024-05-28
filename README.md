@@ -1,7 +1,7 @@
 <html lang="en">
 <body>
     <div style="display: flex; align-items: center;">
-        <img src="images/PDP.png" alt="image" width="200">
+<!--         <img src="images/PDP.png" alt="image" width="200"> -->
         <div style="margin-left: 20px;">
             <h1>Mickaël RAKOTOARINIVO</h1>
             <p>I'm a data developer specializing in cloud solutions. With a master's degree in data science, I have solid experience in big data and data analysis. I trained on Databricks for data engineering, and here's what I learned.</p>
